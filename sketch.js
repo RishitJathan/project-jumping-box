@@ -68,24 +68,25 @@ function draw() {
 
 
 
-      if(gameObject1.isTouching(gameObject5) && gameObject5.bounceOff(gameObject1)){
-        gameObject5.shapeColor="green";
-        music.play();
+      if(gameObject1.isTouching(gameObject5)){
+        gameObject5.velocityX=0;
+          gameObject5.velocityY=0;
+        
       }
 
-      if(gameObject2.isTouching(gameObject5) && gameObject5.bounceOff(gameObject2)){
-        gameObject5.shapeColor="red";
-        music.play();
+      if(gameObject2.isTouching(gameObject5)){
+       gameObject5.velocityX=0;
+          gameObject5.velocityY=0;
     }
 
-      if(gameObject3.isTouching(gameObject5) && gameObject5.bounceOff(gameObject3)){
-        gameObject5.shapeColor="orange";
-        music.play();
+      if(gameObject3.isTouching(gameObject5) ){
+      gameObject5.velocityX=0;
+          gameObject5.velocityY=0;
     }
 
-      if(gameObject4.isTouching(gameObject5) && gameObject5.bounceOff(gameObject4)){
-        gameObject5.shapeColor="darkblue";
-        music.play();
+      if(gameObject4.isTouching(gameObject5) ){
+        gameObject5.velocityX=0;
+          gameObject5.velocityY=0;
       }
 
 drawSprites();
