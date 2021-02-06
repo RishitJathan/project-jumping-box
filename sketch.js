@@ -11,7 +11,7 @@ music=loadSound("  music.mp3");
 
 function setup(){
     canvas = createCanvas(800,600);
-
+music.play();
     //create 4 different surfaces
     gameObject1=createSprite(700,590,180,15);
     gameObject1.shapeColor="green";
