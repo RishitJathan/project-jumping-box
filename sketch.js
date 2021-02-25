@@ -45,7 +45,6 @@ function draw() {
     if(keyDown(RIGHT_ARROW)){
         gameObject5.velocityY=1;
         gameObject5.velocityX=4;   
-music.play();
 
     }
        
@@ -70,24 +69,20 @@ music.play();
 
 
       if(gameObject1.isTouching(gameObject5)){
-        gameObject5.velocityX=0;
-          gameObject5.velocityY=0;
+      music.play() ; 
         
       }
 
       if(gameObject2.isTouching(gameObject5)){
-       gameObject5.velocityX=0;
-          gameObject5.velocityY=0;
+       music.stop();
     }
 
       if(gameObject3.isTouching(gameObject5) ){
-      gameObject5.velocityX=0;
-          gameObject5.velocityY=0;
+      music.stop();
     }
 
       if(gameObject4.isTouching(gameObject5) ){
-        gameObject5.velocityX=0;
-          gameObject5.velocityY=0;
+        music.play();
       }
 
 drawSprites();
