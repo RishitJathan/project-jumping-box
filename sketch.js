@@ -65,6 +65,10 @@ function draw() {
         gameObject5.bounceOff(line1);
         gameObject5.bounceOff(line2);
         gameObject5.bounceOff(line3);
+        gameObject5.bounceOff(gameObject1);
+        gameObject5.bounceOff(gameObject2);
+        gameObject5.bounceOff(gameObject3);
+        gameObject5.bounceOff(gameObject4);
 
 
 
