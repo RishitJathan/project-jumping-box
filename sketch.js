@@ -72,20 +72,20 @@ function draw() {
 
 
 
-      if(gameObject1.isTouching(gameObject5)){
+      if(gameObject5.isTouching(gameObject1)){
       music.play() ; 
         
       }
 
-      if(gameObject2.isTouching(gameObject5)){
+      if(gameObject5.isTouching(gameObject2)){
        music.stop();
     }
 
-      if(gameObject3.isTouching(gameObject5) ){
+      if(gameObject5.isTouching(gameObject3) ){
       music.stop();
     }
 
-      if(gameObject4.isTouching(gameObject5) ){
+      if(gameObject5.isTouching(gameObject4) ){
         music.play();
       }
 
